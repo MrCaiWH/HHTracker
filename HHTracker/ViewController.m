@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HHDetailViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"首页";
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    HHDetailViewController *vc = [[HHDetailViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

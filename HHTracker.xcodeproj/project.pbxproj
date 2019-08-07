@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		CB249C4922FABFCD00195C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB249C4822FABFCD00195C16 /* Assets.xcassets */; };
 		CB249C4C22FABFCD00195C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB249C4A22FABFCD00195C16 /* LaunchScreen.storyboard */; };
 		CB249C4F22FABFCD00195C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C4E22FABFCD00195C16 /* main.m */; };
+		CB249C5E22FAC20500195C16 /* HHEventMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C5D22FAC20500195C16 /* HHEventMonitor.m */; };
+		CB249C6122FAC23300195C16 /* HHTrackConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6022FAC23300195C16 /* HHTrackConstant.m */; };
+		CB249C6722FAC2FA00195C16 /* HHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6522FAC2FA00195C16 /* HHDetailViewController.m */; };
+		CB249C6822FAC2FA00195C16 /* HHDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB249C6622FAC2FA00195C16 /* HHDetailViewController.xib */; };
+		CB249C6B22FAC33200195C16 /* HHDetailTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6A22FAC33200195C16 /* HHDetailTrack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,16 @@
 		CB249C4B22FABFCD00195C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB249C4D22FABFCD00195C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB249C4E22FABFCD00195C16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB249C5C22FAC20500195C16 /* HHEventMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHEventMonitor.h; sourceTree = "<group>"; };
+		CB249C5D22FAC20500195C16 /* HHEventMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHEventMonitor.m; sourceTree = "<group>"; };
+		CB249C5F22FAC23300195C16 /* HHTrackConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTrackConstant.h; sourceTree = "<group>"; };
+		CB249C6022FAC23300195C16 /* HHTrackConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTrackConstant.m; sourceTree = "<group>"; };
+		CB249C6322FAC29300195C16 /* HHEventProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHEventProtocol.h; sourceTree = "<group>"; };
+		CB249C6422FAC2FA00195C16 /* HHDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDetailViewController.h; sourceTree = "<group>"; };
+		CB249C6522FAC2FA00195C16 /* HHDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDetailViewController.m; sourceTree = "<group>"; };
+		CB249C6622FAC2FA00195C16 /* HHDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHDetailViewController.xib; sourceTree = "<group>"; };
+		CB249C6922FAC33200195C16 /* HHDetailTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDetailTrack.h; sourceTree = "<group>"; };
+		CB249C6A22FAC33200195C16 /* HHDetailTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDetailTrack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +65,6 @@
 				4651D7B3AC0FCC7DCC0CBE6D /* Pods-HHTracker.debug.xcconfig */,
 				AA9436642AA19A761A449667 /* Pods-HHTracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +97,8 @@
 		CB249C3E22FABFCC00195C16 /* HHTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CB249C5522FAC12200195C16 /* Track */,
+				CB249C5622FAC13200195C16 /* Detail */,
 				CB249C3F22FABFCC00195C16 /* AppDelegate.h */,
 				CB249C4022FABFCC00195C16 /* AppDelegate.m */,
 				CB249C4222FABFCC00195C16 /* ViewController.h */,
@@ -94,6 +110,38 @@
 				CB249C4E22FABFCD00195C16 /* main.m */,
 			);
 			path = HHTracker;
+			sourceTree = "<group>";
+		};
+		CB249C5522FAC12200195C16 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				CB249C6322FAC29300195C16 /* HHEventProtocol.h */,
+				CB249C5C22FAC20500195C16 /* HHEventMonitor.h */,
+				CB249C5D22FAC20500195C16 /* HHEventMonitor.m */,
+				CB249C5F22FAC23300195C16 /* HHTrackConstant.h */,
+				CB249C6022FAC23300195C16 /* HHTrackConstant.m */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		CB249C5622FAC13200195C16 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CB249C6222FAC25500195C16 /* Track */,
+				CB249C6422FAC2FA00195C16 /* HHDetailViewController.h */,
+				CB249C6522FAC2FA00195C16 /* HHDetailViewController.m */,
+				CB249C6622FAC2FA00195C16 /* HHDetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CB249C6222FAC25500195C16 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				CB249C6922FAC33200195C16 /* HHDetailTrack.h */,
+				CB249C6A22FAC33200195C16 /* HHDetailTrack.m */,
+			);
+			path = Track;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +172,7 @@
 		CB249C3422FABFCC00195C16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HH;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = koolearn;
 				TargetAttributes = {
@@ -156,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB249C4C22FABFCD00195C16 /* LaunchScreen.storyboard in Resources */,
+				CB249C6822FAC2FA00195C16 /* HHDetailViewController.xib in Resources */,
 				CB249C4922FABFCD00195C16 /* Assets.xcassets in Resources */,
 				CB249C4722FABFCC00195C16 /* Main.storyboard in Resources */,
 			);
@@ -210,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB249C5E22FAC20500195C16 /* HHEventMonitor.m in Sources */,
+				CB249C6B22FAC33200195C16 /* HHDetailTrack.m in Sources */,
 				CB249C4422FABFCC00195C16 /* ViewController.m in Sources */,
 				CB249C4F22FABFCD00195C16 /* main.m in Sources */,
+				CB249C6722FAC2FA00195C16 /* HHDetailViewController.m in Sources */,
+				CB249C6122FAC23300195C16 /* HHTrackConstant.m in Sources */,
 				CB249C4122FABFCC00195C16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
