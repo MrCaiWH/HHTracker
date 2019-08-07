@@ -19,6 +19,7 @@
 		CB249C6722FAC2FA00195C16 /* HHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6522FAC2FA00195C16 /* HHDetailViewController.m */; };
 		CB249C6822FAC2FA00195C16 /* HHDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB249C6622FAC2FA00195C16 /* HHDetailViewController.xib */; };
 		CB249C6B22FAC33200195C16 /* HHDetailTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6A22FAC33200195C16 /* HHDetailTrack.m */; };
+		CB249C6E22FAC82400195C16 /* HHPageMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB249C6D22FAC82400195C16 /* HHPageMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		CB249C6622FAC2FA00195C16 /* HHDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHDetailViewController.xib; sourceTree = "<group>"; };
 		CB249C6922FAC33200195C16 /* HHDetailTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHDetailTrack.h; sourceTree = "<group>"; };
 		CB249C6A22FAC33200195C16 /* HHDetailTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHDetailTrack.m; sourceTree = "<group>"; };
+		CB249C6C22FAC82400195C16 /* HHPageMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPageMonitor.h; sourceTree = "<group>"; };
+		CB249C6D22FAC82400195C16 /* HHPageMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHPageMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				CB249C5D22FAC20500195C16 /* HHEventMonitor.m */,
 				CB249C5F22FAC23300195C16 /* HHTrackConstant.h */,
 				CB249C6022FAC23300195C16 /* HHTrackConstant.m */,
+				CB249C6C22FAC82400195C16 /* HHPageMonitor.h */,
+				CB249C6D22FAC82400195C16 /* HHPageMonitor.m */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				CB249C6722FAC2FA00195C16 /* HHDetailViewController.m in Sources */,
 				CB249C6122FAC23300195C16 /* HHTrackConstant.m in Sources */,
 				CB249C4122FABFCC00195C16 /* AppDelegate.m in Sources */,
+				CB249C6E22FAC82400195C16 /* HHPageMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

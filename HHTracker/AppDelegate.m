@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HHEventMonitor.h"
 #import "HHDetailTrack.h"
+#import "HHPageMonitor.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +22,7 @@
     // Override point for customization after application launch.
     
     [HHEventMonitor aop_hookClazz:[HHDetailTrack class]];
+    [HHPageMonitor statistics];
     
     return YES;
 }
